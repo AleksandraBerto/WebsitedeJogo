@@ -9,7 +9,7 @@ O projeto demonstra a capacidade de criar uma interface que se alinha perfeitame
 * **Navegação clara** para guiar o usuário por diferentes seções do universo do jogo.
 
 ## 🚀 Acesse o Site
-
+https://aleksandraberto.github.io/WebsitedeJogo/
 
 ## 📂 Estrutura do projeto
 /NeonRealmsWebsite
