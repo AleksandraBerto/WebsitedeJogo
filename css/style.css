@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* .bg-img{
+    width: 100%;
+    height: 100vh;
+} */
+
+nav{
+    position: fixed;
+    /* background: #1b1b1b; */ /* tirar */
+    width: 100%;
+    padding: 10px 0;
+}
+
+nav .parent{
+    max-width: 1450px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo{
+    width: 10%;
+}
+
+.parent ul a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.parent ul {
+    display: flex;
+}
+
+.parent ul li{
+    list-style: none;
+    margin-left: 7px;
+}
+
+.parent ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.parent ul li a:hover{
+    background: #fff; /* add outra cor */
+    color: #000;
+}
+.parent ul li:last-child a {
+  background: linear-gradient(90deg, #ff00ff, #7700ff);
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.parent ul li:last-child a:hover {
+  box-shadow: 0 0 15px #ff00ff, 0 0 30px #7700ff;
+}
+
+.img {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: #0a0022; /* base do fundo */
+
+  /* 1) gradiente por cima (transparente à esquerda, sólido à direita)
+     2) imagem por baixo, alinhada à esquerda e embaixo */
+  background-image:
+    linear-gradient(to left, rgba(10,0,34,0) 45%, #0a0022 72%),
+    url("../img/bg-image.jpg");
+
+  background-repeat: no-repeat, no-repeat;
+  background-position: right top, right bottom;  /* gradiente cobre tudo; imagem cola na esquerda/baixo */
+  background-size: 100% 100%, auto 100%;      /* gradiente cobre 100%; imagem ocupa 100% da altura */
+}
+
+.left{
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    padding: 0 20px;
+    text-align: left;
+}
+
+.left .title{
+    font-family: "Orbitron", sans-serif;
+    color: #ff00ff;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.left .text{
+    color: #fff;
+    font-size: 22px;
+    font-weight: lighter;
+    max-width: 600px;
+}
+
+.left .btns{
+    margin-top: 20px;
+}
+
+.left .btns button{ 
+    height: 55px;
+    width: 15%;
+    border-radius: 5px;
+    border: none;
+    margin: 0 10px;
+    /* border: 2px solid #fff; */
+    background: linear-gradient(90deg, #ff00ff,#8a2be2 );
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.left .btns button:last-child{
+    color: #ff00ff;
+    background: none;
+    border: 2px solid #ff00ff;
+}
+
+.left .btns button:hover{
+    box-shadow: 0 0 15px #ff00ff, 0 0 10px #7700ff;
+}
